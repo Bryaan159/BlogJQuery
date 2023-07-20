@@ -10,3 +10,59 @@
     font-family: 'Poppins', sans-serif;
 }
 /* Variables que se van a utilizar */
+:root{
+    --container-color: #1a1e21;
+    --second-color: #fd8f44;
+    --text-color:#172317;
+    --bg-color:#fff;
+}
+/* Nuevo */
+::selection{
+    background-color: var(--second-color);
+    color: var(--bg-color);
+}
+/*  */
+
+
+header{
+    /* Importante ↓ */
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+}
+.container{
+    /* Importante ↓ */
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+}
+.nav{
+    /* Importante ↓ */
+    display: flex;
+    align-items: center;
+    /* Importante ↓  */
+    justify-content: space-between;
+    padding: 18px 0;
+}
+.logo{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:var(--text-color);
+}
+a{
+    text-decoration: none;
+
+}
+li{
+    list-style: none;
+
+}
+img{
+    width: 100%;
+
+}
+section{
+    padding:3rem 0 2rem;
+}
