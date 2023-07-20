@@ -49,8 +49,45 @@ header{
 .logo{
     font-size: 1.5rem;
     font-weight: 600;
-    color:var(--text-color);
+    color:var(--bg-color);
 }
+.logo span{
+    color:var(--second-color)
+}
+.login{
+    padding: 8px 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 4px;
+    background: var(--second-color);
+    color:var(--bg-color)
+}
+.login:hover{
+    background: var(--container-color);
+}
+/* Principal */
+.home{
+    width: 100%;
+    /* Importante ↓ */
+    min-height: 440px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: var(--container-color);
+}
+.home-text{
+    color: var(--bg-color);
+    text-align: center;
+}
+.home-title{
+    font-size: 3.5rem;
+}
+.home-subtitle{
+    font-size: 1rem;
+    margin: 1rem 0;
+    font-weight: 400;
+}
+
 a{
     text-decoration: none;
 
@@ -66,3 +103,86 @@ img{
 section{
     padding:3rem 0 2rem;
 }
+/* Post-Filter */
+.post-filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Importante ↓ */
+    column-gap: 1.5rem;
+    /* Importante ↓ */
+    margin-top: 2rem !important;
+
+}
+.filter-item{
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor:pointer;
+}
+.active-filter{
+    padding:4px 10px;
+    border-radius: 4px;
+    background: var(--second-color);
+    color: var(--bg-color);
+}
+/* Post */
+.post{
+    /* Importante ↓ */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+    justify-content: center;
+    gap:1.5rem;
+}
+.post-box{
+    /* Importante ↓ */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 4px;
+    background: var(--bg-color);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+
+/* Estilos generales para dispositivos móviles y pantallas pequeñas */
+@media only screen and (max-width: 600px) {
+    /* Ajustar tamaño de fuente para elementos principales */
+    header {
+      padding: 8px 0;
+    }
+  
+    .logo {
+      font-size: 1rem;
+    }
+  
+    .login {
+      font-size: 0.8rem;
+      padding: 4px 8px;
+    }
+  
+    .home-title {
+      font-size: 2rem;
+    }
+  
+    .home-subtitle {
+      font-size: 0.8rem;
+      margin: 0.5rem 0;
+    }
+  
+    .post-filter {
+      flex-wrap: wrap;
+    }
+  
+    .filter-item {
+      font-size: 0.8rem;
+      margin-bottom: 6px;
+    }
+  
+    .content {
+      font-size: 0.9rem;
+    }
+  }
+  
