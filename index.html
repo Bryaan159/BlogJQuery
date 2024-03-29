@@ -5,94 +5,247 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Website</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="./CSS/darkMode.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
+    <link rel="stylesheet" href="./CSS/loading.css">
+    <link rel="stylesheet" href="./CSS/responsive.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
 </head>
 
-<body>
+<body class="light">
     <!-- Cabeza -->
     <header>
         <!-- Navegacion -->
         <div class="nav container">
 
-            <a href="#" class="logo">Blog<span>Site</span></a>
-            <a href="#" class="login">Login</a>
+            <a href="#" class="logo" id="main">Blog<span>Site</span></a>
+            <!--Modo oscuro-->
+            <input type="checkbox" id="toggle">
+            <label class="toggle" for="toggle">
+                <i class="bx bxs-sun"></i>
+                <i class="bx bx-moon"></i>
+                <span class="ball"></span>
+            </label>
         </div>
     </header>
 
-    <!-- Principal -->
     <section class="home" id="home">
         <div class="home-text container">
             <h2 class="home-title">The best blogs</h2>
             <span class="home-subtitle">Your source of great content</span>
+            <a href="#post-filter" class="btn">Explore Now</a>
         </div>
     </section>
 
     <!-- Post Filter -->
     <div class="post-filter container">
         <span class="filter-item active-filter" data-filter='All'>All</span>
-        <span class="filter-item" data-filter='option1'>Option1</span>
-        <span class="filter-item" data-filter='option2'>Option2</span>
-        <span class="filter-item" data-filter='option3'>Option3</span>
+        <span class="filter-item" data-filter='organization'>Organization</span>
+        <span class="filter-item" data-filter='control'>Control</span>
+        <span class="filter-item" data-filter='growth'>Growth</span>
     </div>
 
+    <!-- ====================================================== -->
+
     <!-- Tarjeta de Post -->
-    <section class="post container">
+    <section class="post container" id="post-filter">
         <!-- #1 Post -->
-        <div class="post-box">
-            <img src="img/main3.jpg" alt="">
-            <h2 class="category">Option1</h2>
-            <a href="post-page.html" class="post-title">
-                How to become a photographer professional
+        <div class="post-box organization">
+            <img src="img/main3.jpg" alt="" class="post-img">
+            <h2 class="category">Organization</h2>
+            <a href="./post/post-page.html" class="post-title">
+                Mastering Organization:Unlock Your Productivity!
             </a>
             <span class="post-date">July 20, 2023</span>
-            <p class="post-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. At facilis sequi pariatur illo veritatis corrupti labore, corporis sint. Impedit, assumenda eligendi harum deserunt et ducimus atque quo unde quaerat sequi!</p>
+            <p class="post-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. At facilis sequi
+                pariatur illo veritatis corrupti labore, corporis sint. Impedit, assumenda eligendi harum deserunt et
+                ducimus atque quo unde quaerat sequi!</p>
             <!-- Perfil de escritor -->
             <div class="profile">
-                <img src="/img/profile1.jpg" alt="perfil1" class="profile-img">
-                <span class="profile-name">Laura Smith</span>
+                <img src="/img/profileCaro.jpg" alt="perfil1" class="profile-img">
+                <span class="profile-name">Carolina Hernández</span>
             </div>
         </div>
+
+        <!-- ====================================================== -->
 
         <!-- #2 Post -->
-        <div class="post-box">
-            <img src="img/main2.jpg" alt="">
-            <h2 class="category">Option2</h2>
+        <div class="post-box organization">
+            <img src="img/main2.jpg" alt="" class="post-img">
+            <h2 class="category">Organization</h2>
             <a href="post-page.html" class="post-title">
                 How to become a photographer professional
             </a>
             <span class="post-date">July 20, 2023</span>
-            <p class="post-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. At facilis sequi pariatur illo veritatis corrupti labore, corporis sint. Impedit, assumenda eligendi harum deserunt et ducimus atque quo unde quaerat sequi!</p>
+            <p class="post-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. At facilis sequi
+                pariatur illo veritatis corrupti labore, corporis sint. Impedit, assumenda eligendi harum deserunt et
+                ducimus atque quo unde quaerat sequi!</p>
             <!-- Perfil de escritor -->
             <div class="profile">
-                <img src="/img/profile2.jpg" alt="perfil1" class="profile-img">
-                <span class="profile-name">Victor Navarro</span>
+                <img src="/img/profileCaro.jpg" alt="perfil1" class="profile-img">
+                <span class="profile-name">Carolina Hernández</span>
             </div>
         </div>
 
+        <!-- ====================================================== -->
+
         <!-- #3 Post -->
-        <div class="post-box">
-            <img src="img/main4.jpg" alt="">
-            <h2 class="category">Option3</h2>
+        <div class="post-box control">
+            <img src="img/main4.jpg" alt="" class="post-img">
+            <h2 class="category">Control</h2>
             <a href="post-page.html" class="post-title">
                 How to become a photographer professional
             </a>
             <span class="post-date">July 20, 2023</span>
-            <p class="post-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. At facilis sequi pariatur illo veritatis corrupti labore, corporis sint. Impedit, assumenda eligendi harum deserunt et ducimus atque quo unde quaerat sequi!</p>
+            <p class="post-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. At facilis sequi
+                pariatur illo veritatis corrupti labore, corporis sint. Impedit, assumenda eligendi harum deserunt et
+                ducimus atque quo unde quaerat sequi!</p>
             <!-- Perfil de escritor -->
             <div class="profile">
-                <img src="/img/profile3.jpg" alt="perfil1" class="profile-img">
-                <span class="profile-name">Nicole López</span>
+                <a href="./aboutUs.html"><img src="/img/profileCaro.jpg" alt="perfil1" class="profile-img"></a>
+                <span class="profile-name">Carolina Hernández</span>
             </div>
         </div>
+
+        <!-- ====================================================== -->
+        <!-- #4 Post -->
+        <div class="post-box growth">
+            <img src="img/main5.jpg" alt="" class="post-img">
+            <h2 class="category">Growth</h2>
+            <a href="post-page.html" class="post-title">
+                How to become a photographer professional
+            </a>
+            <span class="post-date">July 20, 2023</span>
+            <p class="post-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. At facilis sequi
+                pariatur illo veritatis corrupti labore, corporis sint. Impedit, assumenda eligendi harum deserunt et
+                ducimus atque quo unde quaerat sequi!</p>
+            <!-- Perfil de escritor -->
+            <div class="profile">
+                <img src="/img/profileCaro.jpg" alt="perfil1" class="profile-img">
+                <span class="profile-name">Carolina Hernández</span>
+            </div>
+        </div>
+
+        <!-- ====================================================== -->
+        <!-- #5 Post -->
+        <div class="post-box organization">
+            <img src="img/main2.jpg" alt="" class="post-img">
+            <h2 class="category">Organization</h2>
+            <a href="post-page.html" class="post-title">
+                How to become a photographer professional
+            </a>
+            <span class="post-date">July 20, 2023</span>
+            <p class="post-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. At facilis sequi
+                pariatur illo veritatis corrupti labore, corporis sint. Impedit, assumenda eligendi harum deserunt et
+                ducimus atque quo unde quaerat sequi!</p>
+            <!-- Perfil de escritor -->
+            <div class="profile">
+                <img src="/img/profileCaro.jpg" alt="perfil1" class="profile-img">
+                <span class="profile-name">Carolina Hernández</span>
+            </div>
+        </div>
+
+        <!-- ====================================================== -->
+        <!-- #6 Post -->
+        <div class="post-box growth">
+            <img src="img/main7.jpg" alt="" class="post-img">
+            <h2 class="category">Growth</h2>
+            <a href="post-page.html" class="post-title">
+                How to become a photographer professional
+            </a>
+            <span class="post-date">July 20, 2023</span>
+            <p class="post-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. At facilis sequi
+                pariatur illo veritatis corrupti labore, corporis sint. Impedit, assumenda eligendi harum deserunt et
+                ducimus atque quo unde quaerat sequi!</p>
+            <!-- Perfil de escritor -->
+            <div class="profile">
+                <img src="/img/profileCaro.jpg" alt="perfil1" class="profile-img">
+                <span class="profile-name">Carolina Hernández</span>
+            </div>
+        </div>
+
+        <!-- ====================================================== -->
+        <!-- #7 Post -->
+        <div class="post-box growth">
+            <img src="img/main2.jpg" alt="" class="post-img">
+            <h2 class="category">Growth</h2>
+            <a href="post-page.html" class="post-title">
+                How to become a photographer professional
+            </a>
+            <span class="post-date">July 20, 2023</span>
+            <p class="post-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. At facilis sequi
+                pariatur illo veritatis corrupti labore, corporis sint. Impedit, assumenda eligendi harum deserunt et
+                ducimus atque quo unde quaerat sequi!</p>
+            <!-- Perfil de escritor -->
+            <div class="profile">
+                <img src="/img/profileCaro.jpg" alt="perfil1" class="profile-img">
+                <span class="profile-name">Carolina Hernández</span>
+            </div>
+        </div>
+        <!-- ====================================================== -->
+        <!-- #8 Post -->
+        <div class="post-box control">
+            <img src="img/main7.jpg" alt="" class="post-img">
+            <h2 class="category">Control</h2>
+            <a href="post-page.html" class="post-title">
+                How to become a photographer professional
+            </a>
+            <span class="post-date">July 20, 2023</span>
+            <p class="post-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. At facilis sequi
+                pariatur illo veritatis corrupti labore, corporis sint. Impedit, assumenda eligendi harum deserunt et
+                ducimus atque quo unde quaerat sequi!</p>
+            <!-- Perfil de escritor -->
+            <div class="profile">
+                <img src="/img/profileCaro.jpg" alt="perfil1" class="profile-img">
+                <span class="profile-name">Carolina Hernández</span>
+            </div>
+        </div>
+        <!-- ====================================================== -->
+        <!-- #8 Post -->
+        <div class="post-box control">
+            <img src="img/main7.jpg" alt="" class="post-img">
+            <h2 class="category">Control</h2>
+            <a href="post-page.html" class="post-title">
+                How to become a photographer professional
+            </a>
+            <span class="post-date">July 20, 2023</span>
+            <p class="post-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. At facilis sequi
+                pariatur illo veritatis corrupti labore, corporis sint. Impedit, assumenda eligendi harum deserunt et
+                ducimus atque quo unde quaerat sequi!</p>
+            <!-- Perfil de escritor -->
+            <div class="profile">
+                <img src="/img/profileCaro.jpg" alt="perfil1" class="profile-img">
+                <span class="profile-name">Carolina Hernández</span>
+            </div>
+        </div>
+        <!-- ====================================================== -->
+
+
+
 
     </section>
 
+    <div class="footer container">
+        <p>&#169; Alucar Studio All right Reserved</p>
+        <div class="social">
+            <a href=""><i class="bx bxl-facebook"></i></a>
+            <a href=""><i class="bx bxl-tiktok"></i></a>
+            <a href="" class="instagram-icon"><i class="bx bxl-instagram"></i></a>
+            <a href=""><i class="bx bxl-linkedin"></i></a>
 
+        </div>
+    </div>
 
-    <script src="script.js">
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <!-- JS -->
+
+    <script src="script.js" defer></script>
 
     </script>
 

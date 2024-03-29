@@ -1,0 +1,165 @@
+
+
+input {
+    display: none;
+    cursor: pointer;
+}
+
+.toggle {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 60px; /* Ancho más pequeño */
+    height: 30px; /* Alto más pequeño */
+    border-radius: 25px; /* Mitad del alto */
+}
+
+.toggle i {
+    width: 30px; /* Ancho más pequeño */
+    line-height: 30px; /* Alineación vertical del ícono */
+    text-align: center;
+    font-size: 16px; /* Tamaño de fuente más pequeño */
+    z-index: 1;
+}
+
+.toggle .ball {
+    position: absolute;
+    width: 20px; /* Ancho de la bola más pequeño */
+    height: 20px; /* Alto de la bola más pequeño */
+    margin: 5px; /* Espacio entre la bola y los bordes del toggle */
+    border-radius: 50%;
+}
+
+/* Ligth mode */
+.light {
+    background: #F4F9F9;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+input {
+    display: none;
+    cursor: pointer;
+}
+
+.toggle {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 60px; /* Ancho más pequeño */
+    height: 30px; /* Alto más pequeño */
+    border-radius: 25px; /* Mitad del alto */
+}
+
+.toggle i {
+    width: 30px; /* Ancho más pequeño */
+    line-height: 30px; /* Alineación vertical del ícono */
+    text-align: center;
+    font-size: 16px; /* Tamaño de fuente más pequeño */
+    z-index: 1;
+}
+
+.toggle .ball {
+    position: absolute;
+    width: 20px; /* Ancho de la bola más pequeño */
+    height: 20px; /* Alto de la bola más pequeño */
+    margin: 5px; /* Espacio entre la bola y los bordes del toggle */
+    border-radius: 50%;
+}
+
+/* Ligth mode */
+.light {
+    background: #ccc;
+}
+
+.light .toggle {
+    background: linear-gradient(145deg, #e1e1e1, #fff);
+}
+
+.light .toggle .bxs-sun {
+    color: #fafafa;
+}
+
+.light .toggle .bxs-moon {
+    color: #151d2a;
+}
+
+.light .toggle .ball {
+    background: #fd8f44;
+}
+
+/* Principal */
+.light .home{
+    width: 100%;
+    /* Importante ↓ */
+    min-height: 440px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background:#F0F0F0;
+}
+.light .home-text{
+    color:black;
+    text-align: center;
+}
+.light .home-title{
+    font-size: 3.5rem;
+}
+.light .home-subtitle{
+    font-size: 1rem;
+    margin: 1rem 0;
+    font-weight: 400;
+}
+
+
+
+/* Dark Mode */
+.dark {
+    background: #323333;
+}
+
+.dark .toggle {
+    background: #fd8f44;
+}
+
+.dark .toggle .bx-sun {
+    color: #fafafa;
+}
+
+.dark .toggle .bxs-moon {
+    color: #151d2a;
+}
+
+.dark .toggle .ball {
+    background: #fafafa;
+    transform: translateX(30px); /* Ajuste para la posición de la bola en el modo oscuro */
+}
+
+/* Principal */
+.dark .home{
+    width: 100%;
+    /* Importante ↓ */
+    min-height: 440px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: var(--container-color);
+}
+.dark .home-text{
+    color: var(--bg-color);
+    text-align: center;
+}
+.dark .home-title{
+    font-size: 3.5rem;
+}
+.dark .home-subtitle{
+    font-size: 1rem;
+    margin: 1rem 0;
+    font-weight: 400;
+}
+
+
