@@ -18,7 +18,7 @@
     --text-color: #172317;
     --bg-color: #fff;
     --bg-color2: #f0f0f0;
-    --third-color:#405cf5;
+    --third-color: #405cf5;
 }
 
 /* Nuevo */
@@ -49,6 +49,8 @@ header {
     margin: auto;
     width: 100%;
 }
+
+
 
 .nav {
     /* Importante ↓ */
@@ -113,7 +115,7 @@ header {
     background: var(--container-color);
 }
 
-.light  .post-container {
+.light .post-container {
     max-width: 800px;
     margin: auto;
     width: 100%;
@@ -144,23 +146,28 @@ header {
 .light .post-content {
     margin-top: 12rem !important;
 }
-.light .sub-heading{
+
+.light .sub-heading {
     font-size: 1.2rem;
 }
+
 .light .post-text {
     font-size: 1rem;
     line-height: 2rem;
-    margin:1rem 0;
+    margin: 1rem 0;
     text-align: justify;
 }
 
 .post-text a {
-    color: #007bff; /* Color azul típico de los enlaces */
-    text-decoration: none; /* Elimina el subrayado predeterminado */
+    color: #007bff;
+    /* Color azul típico de los enlaces */
+    text-decoration: none;
+    /* Elimina el subrayado predeterminado */
 }
 
 .post-text a:hover {
-    text-decoration: underline; /* Subrayado al pasar el cursor sobre el enlace */
+    text-decoration: underline;
+    /* Subrayado al pasar el cursor sobre el enlace */
 }
 
 
@@ -172,7 +179,7 @@ header {
     background: var(--container-color);
 }
 
-.dark  .post-container {
+.dark .post-container {
     max-width: 800px;
     margin: auto;
     width: 100%;
@@ -200,16 +207,18 @@ header {
     border-radius: 22px;
 }
 
-.share{
+.share {
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 1rem;
 }
-.share-title{
+
+.share-title {
     font-size: 1.1rem;
 }
-.footer2{
+
+.footer2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -220,14 +229,16 @@ header {
 .dark .post-content {
     margin-top: 12rem !important;
 }
-.dark .sub-heading{
+
+.dark .sub-heading {
     font-size: 1.2rem;
     color: var(--bg-color2);
 }
+
 .dark .post-text {
     font-size: 1rem;
     line-height: 2rem;
-    margin:1rem 0;
+    margin: 1rem 0;
     text-align: justify;
     color: var(--bg-color2);
 
